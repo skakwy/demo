@@ -5,20 +5,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Document</title>
     <style>
-        body {
-            background: linear-gradient(top left, rgb(100, 100, 100), rgb(0, 0, 0));
+        .customColor {
+            color: #ED2E4C;
+            
         }
-
-        /*BC234B*/
+        .customBgColor{
+            background-color: #ED2E4C;
+        }
     </style>
 </head>
 
-<body>
-    <div class="loginBox">
 
+<body>
+    <div class="flex place-content-center">
+        <svg class=" w-5/12 md:w-2/12 lg:mt-24" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000"
+            style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill: #ED2E4C;
+                }
+            </style>
+            <!--005458-->
+            <g id="Your_design">
+            </g>
+            <g id="Guides">
+                <g>
+                    <path id="XMLID_10334_" class="st0"
+                        d="M445.11,327.13l48.02-83.17c3.05-5.29,10.68-5.29,13.74,0l48.02,83.17    c1.42,2.45,1.42,5.48,0,7.93l-48.02,83.17c-3.05,5.29-10.68,5.29-13.74,0l-48.02-83.17C443.7,332.61,443.7,329.59,445.11,327.13z" />
+                    <path id="XMLID_10333_" class="st0"
+                        d="M338.95,416.58l-24.85-92.77c-1.58-5.9,3.82-11.29,9.71-9.71l92.76,24.86    c2.74,0.73,4.87,2.87,5.61,5.61l24.85,92.76c1.58,5.9-3.82,11.29-9.71,9.71l-92.76-24.85    C341.83,421.45,339.69,419.31,338.95,416.58z" />
+                    <path id="XMLID_10332_" class="st0"
+                        d="M243.97,493.13l83.16-48.02c2.45-1.42,5.48-1.42,7.93,0l83.17,48.02    c5.29,3.05,5.29,10.68,0,13.74l-83.17,48.02c-2.45,1.42-5.48,1.42-7.93,0l-83.16-48.02C238.68,503.82,238.68,496.18,243.97,493.13    z" />
+                    <path id="XMLID_10331_" class="st0"
+                        d="M344.56,577.81l92.76-24.86c5.9-1.58,11.29,3.82,9.71,9.71l-24.85,92.77    c-0.73,2.74-2.87,4.87-5.61,5.61l-92.76,24.86c-5.9,1.58-11.29-3.82-9.71-9.71l24.85-92.77    C339.69,580.69,341.83,578.55,344.56,577.81z" />
+                    <path id="XMLID_10330_" class="st0"
+                        d="M445.11,664.93l48.02-83.17c3.05-5.29,10.68-5.29,13.74,0l48.02,83.17    c1.42,2.45,1.42,5.48,0,7.93l-48.02,83.17c-3.05,5.29-10.68,5.29-13.74,0l-48.02-83.17C443.7,670.41,443.7,667.39,445.11,664.93z" />
+                    <path id="XMLID_10329_" class="st0"
+                        d="M577.81,655.44l-24.85-92.77c-1.58-5.9,3.82-11.29,9.71-9.71l92.76,24.86    c2.74,0.73,4.87,2.87,5.61,5.61l24.85,92.77c1.58,5.9-3.82,11.29-9.71,9.71l-92.76-24.86    C580.69,660.31,578.55,658.17,577.81,655.44z" />
+                    <path id="XMLID_10328_" class="st0"
+                        d="M581.77,493.13l83.17-48.02c2.45-1.42,5.48-1.42,7.93,0l83.16,48.02    c5.29,3.05,5.29,10.68,0,13.74l-83.16,48.02c-2.45,1.42-5.48,1.42-7.93,0l-83.17-48.02C576.48,503.82,576.48,496.18,581.77,493.13    z" />
+                    <path id="XMLID_10327_" class="st0"
+                        d="M583.42,338.95l92.76-24.86c5.9-1.58,11.29,3.82,9.71,9.71l-24.85,92.77    c-0.73,2.74-2.87,4.87-5.61,5.61l-92.76,24.85c-5.9,1.58-11.29-3.82-9.71-9.71l24.85-92.76    C578.55,341.83,580.69,339.69,583.42,338.95z" />
+                </g>
+            </g>
+        </svg>
     </div>
+    <div class="font-extrabold text-2xl lg:text-4xl text-center text-gray-800">
+        Sign in to your account
+        <div id="askSing" class="font-normal text-sm md:text-base mt-4">
+            Don't have an account ? <a href="#" onclick="signUp()" class="customColor">Sign up</a>
+        </div>
+    </div>
+
+    <div class="flex place-content-center">
+        <div id="inputs" class=" inline-block rounded-md border-2  w-4/5 2xl:max-w-xl   lg:w-2/5 mt-5">
+            <div class="place-content-center flex">
+                <input id="email" type="email" placeholder="Email address"
+                    class="outline-none bg-clip-padding h-8 lg:h-10 w-11/12" />
+            </div>
+            <div id="iDiv" class="border-t-2 place-content-center flex">
+                <input class=" bg-clip-padding lg:h-10 h-8 w-11/12 outline-none" placeholder="Password"
+                    type="password" />
+            </div>
+        </div>
+    </div>
+    <div class="flex place-content-center">
+           <button onclick="login()" class="outline-none w-4/5 2xl:max-w-xl customBgColor text-white  h-8 lg:h-10 rounded-md mt-10 lg:w-2/5 text-lg lg:text-2xl font-semibold  text-center"> Sign in </button>
+    </div>
+    <script>
+        var login = true;
+        var usernameInput = document.createElement("input")
+        usernameInput.placeholder = "Username";
+        usernameInput.type = "text";
+        usernameInput.id = "username";
+        usernameInput.name = "username";
+        usernameInput.classList.add("outline-none", "bg-clip-padding", "h-8", "lg:h-10", "w-11/12");
+        var div = document.createElement("div");
+        function signUp() {
+            if (!document.getElementById("askSingA")) {
+                div.appendChild(usernameInput);
+                div.classList.add("border-b-2", "place-content-center", "flex");
+                document.getElementById("inputs").prepend(div);
+                document.getElementById("askSing").innerHTML = "Already have an account ? <a id=\"askSingA\" href=\"#\" onclick=\"signUp()\" class=\"customColor\">Log in</a>";
+            }
+            else {
+                document.getElementById("inputs").removeChild(div);
+                document.getElementById("askSing").innerHTML = "Don't have an account ? <a href=\"#\" onclick=\"signUp()\" class=\"customColor\">Sign up</a>";
+            }
+        }
+    </script>
 </body>
 
 </html>
